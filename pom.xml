@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.michaels-server</groupId>
+  <artifactId>stream</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>stream Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<java.version>1.8</java.version>
+  	<failOnMissingWebXml>false</failOnMissingWebXml>
+  	
+  	<javax.servlet.version>4.0.1</javax.servlet.version>
+  	<spring.version>4.3.24.RELEASE</spring.version>
+  	<jwt.version>0.10.5</jwt.version>
+  	<jackson.version>2.9.9</jackson.version>
+  	<hibernate.version>5.1.17.Final</hibernate.version>
+  	<mysql.version>8.0.16</mysql.version>
+  </properties>
+  
+  <dependencies>
+  
+  	<!-- JAVAX -->
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>javax.servlet-api</artifactId>
+    	<version>${javax.servlet.version}</version>
+    	<scope>provided</scope>
+    </dependency>
+
+	<!-- SPRING -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	
+	<!-- JWT -->
+	<dependency>
+	    <groupId>io.jsonwebtoken</groupId>
+	    <artifactId>jjwt-api</artifactId>
+	    <version>${jwt.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>io.jsonwebtoken</groupId>
+	    <artifactId>jjwt-impl</artifactId>
+	    <version>${jwt.version}</version>
+	    <scope>runtime</scope>
+	</dependency>
+	<dependency>
+	    <groupId>io.jsonwebtoken</groupId>
+	    <artifactId>jjwt-jackson</artifactId>
+	    <version>${jwt.version}</version>
+	    <scope>runtime</scope>
+	</dependency>
+	
+	<!-- JACKSON -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>${jackson.version}</version>
+	</dependency>
+	
+	<!-- HIBERNATE -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>${hibernate.version}</version>
+	</dependency>
+	
+	<!-- MYSQL -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>${mysql.version}</version>
+	</dependency>
+		
+  </dependencies>
+  
+  <build>
+    <finalName>stream</finalName>
+  </build>
+  
+</project>

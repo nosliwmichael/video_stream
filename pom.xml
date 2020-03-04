@@ -17,7 +17,7 @@
   	<javax.servlet.version>4.0.1</javax.servlet.version>
   	<spring.version>4.3.24.RELEASE</spring.version>
   	<jwt.version>0.10.5</jwt.version>
-  	<jackson.version>2.9.9</jackson.version>
+  	<jackson.version>2.9.10.3</jackson.version>
   	<hibernate.version>5.1.17.Final</hibernate.version>
   	<mysql.version>8.0.16</mysql.version>
   </properties>
